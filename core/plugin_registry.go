@@ -20,6 +20,7 @@ import (
 	"github.com/danielmiessler/fabric/plugins/ai/openai"
 	"github.com/danielmiessler/fabric/plugins/ai/openrouter"
 	"github.com/danielmiessler/fabric/plugins/ai/siliconcloud"
+	"github.com/danielmiessler/fabric/plugins/ai/nebius"
 	"github.com/danielmiessler/fabric/plugins/db/fsdb"
 	"github.com/danielmiessler/fabric/plugins/tools/jina"
 	"github.com/danielmiessler/fabric/plugins/tools/lang"
