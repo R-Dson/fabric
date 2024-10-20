@@ -39,7 +39,7 @@ func NewPluginRegistry(db *fsdb.Db) (ret *PluginRegistry) {
 
 	ret.Defaults = tools.NeeDefaults(ret.VendorManager.GetModels)
 
-	ret.VendorsAll.AddVendors(openai.NewClient(), ollama.NewClient(), azure.NewClient(), groq.NewClient(),
+	ret.VendorsAll.AddVendors(openai.NewClient(), ollama.NewClient(), azure.NewClient(), groq.NewClient(), nebius.NewClient(),
 		gemini.NewClient(), anthropic.NewClient(), siliconcloud.NewClient(), openrouter.NewClient(), mistral.NewClient())
 	_ = ret.Configure()
 
